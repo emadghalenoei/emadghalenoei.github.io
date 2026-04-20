@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>TensorFlow Segmentation Pipelines | Emad Ghalenoei</title>
+      <link rel="shortcut icon" href="images/favicon_black.ico">
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <meta name="description" content="TensorFlow and Keras image segmentation workflows by Emad Ghalenoei for utility and infrastructure imagery." />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+   </head>
+   <body class="is-preload">
+      <div id="wrapper">
+         <header id="header">
+            <a href="index.html" class="logo">Emad Ghalenoei</a>
+         </header>
+         <nav id="nav">
+            <ul class="links">
+               <li><a href="index.html#Projects">Projects</a></li>
+               <li class="active"><a href="Project10_TensorFlow_Segmentation.html">Project Details</a></li>
+            </ul>
+            <ul class="icons">
+               <li><a href="https://www.linkedin.com/in/emad-ghalenoei/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+               <li><a href="https://github.com/emadghalenoei" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+         </nav>
+         <div id="main">
+            <section class="post">
+               <header class="major">
+                  <span class="date">Production ML</span>
+                  <h1>TensorFlow Segmentation Pipelines</h1>
+                  <p>Production image-segmentation workflows for utility and infrastructure imagery using TensorFlow and Keras.</p>
+               </header>
+               <span class="image fit"><img src="images/Detectron2_2.png" alt="Segmentation example" /></span>
+               <p>A major part of my recent applied ML work has involved semantic segmentation pipelines built with TensorFlow and Keras. These models were used on utility and road imagery to segment assets such as poles, wires, and related infrastructure, with the goal of supporting scalable production workflows rather than isolated experiments.</p>
+               <p>Based on the framework inventory from my current work, the TensorFlow stack includes Keras Functional API models with pretrained backbones such as EfficientNetV2, DenseNet, and MobileNetV2. The production design uses encoder-decoder architectures with custom upsampling stages, while loss functions span Dice loss, IoU-based loss, Tversky variants, binary cross-entropy combinations, and sparse categorical cross-entropy for multi-class settings.</p>
+               <p>What matters most in these systems is not only model architecture, but repeatable workflow design. I have worked on training pipelines, data preparation, tiling, normalization, metric-based evaluation, and packaging models for operational use. The result is a segmentation workflow that can be maintained, benchmarked, and integrated into larger geospatial and engineering pipelines.</p>
+               <p>This page summarizes the technical direction at a public-safe level. Some implementation details are proprietary, but the architectures, tooling, and workflow design accurately represent the kinds of production ML systems I build.</p>
+               <ul class="actions special">
+                  <li><a href="index.html#Projects" class="button">Back to Projects</a></li>
+               </ul>
+            </section>
+         </div>
+         <div id="copyright">
+            <ul>
+               <li>&copy; Emad Ghalenoei</li>
+            </ul>
+         </div>
+      </div>
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/browser.min.js"></script>
+      <script src="assets/js/breakpoints.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>

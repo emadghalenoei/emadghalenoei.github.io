@@ -39,7 +39,7 @@
                   <p><em>Example video used for motion analysis.</em></p>
                </figure>
                <p>Optical flow estimates apparent motion between sequential frames by assigning a displacement vector to image locations. It is a foundational idea in computer vision because it converts visual change into a measurable field of direction and magnitude that can be analyzed quantitatively.</p>
-               <p>For this project, I used dense optical flow in OpenCV, based on Gunnar Farneback's method, to compute motion across entire frames rather than only at a sparse set of keypoints. I visualized the direction and magnitude of motion using HSV color encoding and vector-field style outputs to make the results easier to interpret.</p>
+               <p>For this project, I used dense optical flow in OpenCV, based on Gunnar Farneback's method, to compute motion across entire frames rather than only at a sparse set of keypoints. I visualized the direction and magnitude of motion using HSV color encoding and vector-field outputs to make the results easier to interpret.</p>
                <span class="image fit"><img src="images/quiver.png" alt="Optical flow vector field" /></span>
                <p>I also applied the same concept to sequential sea-surface temperature satellite imagery. In that context, apparent temperature motion can act as a proxy for surface movement, allowing optical-flow methods to support exploratory analysis of ocean dynamics from remotely sensed data.</p>
                <span class="image fit"><img src="images/sst_opticalflow.PNG" alt="Optical flow on sea surface temperature imagery" /></span>

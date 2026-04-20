@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>3D Point-Cloud Deep Learning | Emad Ghalenoei</title>
+      <link rel="shortcut icon" href="images/favicon_black.ico">
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <meta name="description" content="3D point-cloud deep learning and benchmarking by Emad Ghalenoei using PointNet++, PointConv, and LiDAR classification workflows." />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+   </head>
+   <body class="is-preload">
+      <div id="wrapper">
+         <header id="header">
+            <a href="index.html" class="logo">Emad Ghalenoei</a>
+         </header>
+         <nav id="nav">
+            <ul class="links">
+               <li><a href="index.html#Projects">Projects</a></li>
+               <li class="active"><a href="Project11_PointCloud_DeepLearning.html">Project Details</a></li>
+            </ul>
+            <ul class="icons">
+               <li><a href="https://www.linkedin.com/in/emad-ghalenoei/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+               <li><a href="https://github.com/emadghalenoei" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+         </nav>
+         <div id="main">
+            <section class="post">
+               <header class="major">
+                  <span class="date">3D ML</span>
+                  <h1>3D Point-Cloud Deep Learning</h1>
+                  <p>Applied LiDAR classification and benchmarking across deep-learning and classical models.</p>
+               </header>
+               <span class="image fit"><img src="images/ML3D.png" alt="3D machine learning illustration" /></span>
+               <p>LiDAR classification is a strong example of where model architecture, preprocessing, and benchmarking all matter. In my recent work, I have benchmarked 3D point-cloud workflows using PointNet++, PointConv, and random forest baselines to understand tradeoffs between representation power, computational cost, and production practicality.</p>
+               <p>The framework summary from my current company work shows that PointConv is implemented as a TensorFlow-based semantic-segmentation architecture with hierarchical downsampling, learned density-aware kernels, and custom TensorFlow operations for sampling, neighborhood grouping, and interpolation. That kind of system is valuable for fine-grained point labeling when the workflow must preserve local geometric context.</p>
+               <p>At the same time, benchmarking matters. Deep models should be evaluated against strong classical baselines, feature-engineered workflows, and operational constraints such as preprocessing cost, inference time, and deployment complexity. My work in this area has focused not only on training models, but also on normalization, tiling, feature preparation, and robust evaluation across realistic LiDAR datasets.</p>
+               <p>This project page presents the public-facing view of that work: applied 3D ML grounded in practical benchmarking, scalable preprocessing, and real-world point-cloud classification needs.</p>
+               <ul class="actions special">
+                  <li><a href="index.html#Projects" class="button">Back to Projects</a></li>
+               </ul>
+            </section>
+         </div>
+         <div id="copyright">
+            <ul>
+               <li>&copy; Emad Ghalenoei</li>
+            </ul>
+         </div>
+      </div>
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/browser.min.js"></script>
+      <script src="assets/js/breakpoints.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
