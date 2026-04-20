@@ -1,217 +1,57 @@
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    <title>Instagram Web Browser Automation with Selenium Python</title>
-    <<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
-    <link rel="stylesheet" type="text/css" href="/assets/main/css/main.css" />
-    <noscript><link rel="stylesheet" href="/assets/main/css/noscript.css" /></noscript>
-
-    <meta name="description" content="Welcome, it&#x27;s great to have you here.
-We know that first impressions are important, so we&#x27;ve populated your new site with some initial getting started posts that will help you get familiar with everything in no time." />
-    
-    <meta name="referrer" content="no-referrer-when-downgrade" />
-    <link rel="amphtml" href="https://massively.ghost.io/welcome/amp/" />
-    
-    <meta property="og:site_name" content="This is Massively" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Welcome to Ghost" />
-    <meta property="og:description" content="Welcome, it&#x27;s great to have you here.
-We know that first impressions are important, so we&#x27;ve populated your new site with some initial getting started posts that will help you get familiar with everything in no time." />
-    <meta property="og:url" content="https://massively.ghost.io/welcome/" />
-    <meta property="og:image" content="https://static.ghost.org/v2.0.0/images/welcome-to-ghost.jpg" />
-    <meta property="article:published_time" content="2018-11-30T12:15:35.000Z" />
-    <meta property="article:modified_time" content="2018-11-30T12:15:30.000Z" />
-    <meta property="article:tag" content="Getting Started" />
-    
-    <meta property="article:publisher" content="https://www.facebook.com/ghost" />
-    <meta property="article:author" content="https://www.facebook.com/ghost" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Welcome to Ghost" />
-    <meta name="twitter:description" content="Welcome, it&#x27;s great to have you here.
-We know that first impressions are important, so we&#x27;ve populated your new site with some initial getting started posts that will help you get familiar with everything in no time." />
-    <meta name="twitter:url" content="https://massively.ghost.io/welcome/" />
-    <meta name="twitter:image" content="https://static.ghost.org/v2.0.0/images/welcome-to-ghost.jpg" />
-    <meta name="twitter:label1" content="Written by" />
-    <meta name="twitter:data1" content="Ghost" />
-    <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="Getting Started" />
-    <meta name="twitter:site" content="@tryghost" />
-    <meta name="twitter:creator" content="tryghost" />
-    <meta property="og:image:width" content="1600" />
-    <meta property="og:image:height" content="1050" />
-    
-    <script type="application/ld+json">
-
-    </script>
-
-    <meta name="generator" content="Ghost 4.35" />
-    <link rel="alternate" type="application/rss+xml" title="This is Massively" href="https://massively.ghost.io/rss/" />
-    <script defer src="https://unpkg.com/@tryghost/portal@~1.14.0/umd/portal.min.js" data-ghost="https://massively.ghost.io/" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
-.gh-post-upgrade-cta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    width: 100%;
-    color: #ffffff;
-    font-size: 16px;
-}
-
-.gh-post-upgrade-cta-content {
-    border-radius: 8px;
-    padding: 40px 4vw;
-}
-
-.gh-post-upgrade-cta h2 {
-    color: #ffffff;
-    font-size: 28px;
-    letter-spacing: -0.2px;
-    margin: 0;
-    padding: 0;
-}
-
-.gh-post-upgrade-cta p {
-    margin: 20px 0 0;
-    padding: 0;
-}
-
-.gh-post-upgrade-cta small {
-    font-size: 16px;
-    letter-spacing: -0.2px;
-}
-
-.gh-post-upgrade-cta a {
-    color: #ffffff;
-    cursor: pointer;
-    font-weight: 500;
-    box-shadow: none;
-    text-decoration: underline;
-}
-
-.gh-post-upgrade-cta a:hover {
-    color: #ffffff;
-    opacity: 0.8;
-    box-shadow: none;
-    text-decoration: underline;
-}
-
-.gh-post-upgrade-cta a.gh-btn {
-    display: block;
-    background: #ffffff;
-    text-decoration: none;
-    margin: 28px 0 0;
-    padding: 8px 18px;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.gh-post-upgrade-cta a.gh-btn:hover {
-    opacity: 0.92;
-}</style>
-    <script defer src="/public/cards.min.js?v=bc936d3dab"></script><style>:root {--ghost-accent-color: #15171A;}</style>
-    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=bc936d3dab">
-
-    <style>#wrapper>.bg {background-image: url(/assets/images/overlay.png?v=bc936d3dab),linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)),url("/content/images/2018/11/bg.jpg") }</style>
-
-</head>
-<body class="is-preload post-template tag-getting-started">
-
-    <div id="wrapper" >
-
-
-        <header id="header">
-                <a href="#" class="major"><h1>Learning selenium web browser automation By Emad</h1></a>
-        </header>
-
-            <nav id="nav">
-
-
-</nav>
-
-
-        
-
-<main id="main">
-
-    <section class="post">
-
-        <header class="major">
-            
-            <h1>Selenium Automation</h1>
-                <p class="content">Welcome, it&#x27;s great to have you here.
-				Want to hear more about the Instagram Web Browser Automation with Selenium Python?</p>
-        </header>
-
-        <a href="#" class="image fit"><img src="images/Follow_Selenium.png" alt="" /><figcaption><p>Part of the Selenium Python code for following in Instagram.</p></figcaption></a>
-
-        <div class="content">
-            
-			<p> Selenium is an open-source umbrella project for a range of tools and libraries aimed at supporting web browser automation.
-				Selenium provides a playback tool for authoring functional tests without the need to learn a test scripting language (Selenium IDE).
-				It also provides a test domain-specific language (Selenese) to write tests in several popular programming languages,
-				including JavaScript (Node.js), C#, Groovy, Java, Perl, PHP, Python, Ruby, and Scala. The tests can then run against most modern web browsers.
-				Selenium runs on Windows, Linux, and macOS. (wiki) </p>
-				
-			<p> I implemented a Python code with Selenium module to open the Instagram and perform some actions. For example, This can automatically follow people by extracting their HTML element information (XPath).
-				The most challenging part of this project was "scrolling down" to get more information from the web. For example, if I open a modal window showing the likers of a post, it only shows up to 17 user elements.
-				Therefore, it should be written in such a way to perform actions for 1 to 13 users, then scrolling down to get elements for the next 14 to 27 users.</p>
-				
-			<p> I also assigned random sleeping time between these actions to avoid having the account suspended by Instagram. Note that the aim of this project is educational not for business purposes. I hope to represent how to learn automatic action on web browsers.
-				, I do not intend to violate Instagram community guidelines.</p>
-				
-				
-	
-			</em></blockquote>
-        </div>
-
-
-        
-
-    </section>
-
-</main>
-
-
-<script>
-    var images = document.querySelectorAll('.kg-gallery-image img');
-    images.forEach(function (image) {
-        var container = image.closest('.kg-gallery-image');
-        var width = image.attributes.width.value;
-        var height = image.attributes.height.value;
-        var ratio = width / height;
-        container.style.flex = ratio + ' 1 0%';
-    })
-</script>
-
-
-        <div id="copyright">
-    <ul>
-        <li>&copy; Emad Ghalenoei</li>
-    </ul>
-</div>
-    </div>
-
-
-    <script src="/assets/main/js/jquery.min.js?v=bc936d3dab"></script>
-    <script src="/assets/main/js/jquery.scrollex.min.js?v=bc936d3dab"></script>
-    <script src="/assets/main/js/jquery.scrolly.min.js?v=bc936d3dab"></script>
-    <script src="/assets/main/js/browser.min.js?v=bc936d3dab"></script>
-    <script src="/assets/main/js/breakpoints.min.js?v=bc936d3dab"></script>
-    <script src="/assets/main/js/util.js?v=bc936d3dab"></script>
-    <script src="/assets/main/js/main.js?v=bc936d3dab"></script>
-
-    
-
-</body>
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <title>Selenium Browser Automation | Emad Ghalenoei</title>
+      <link rel="shortcut icon" href="images/favicon_black.ico">
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <meta name="description" content="Selenium browser automation project by Emad Ghalenoei focused on Python workflow scripting, DOM interaction, and dynamic page handling." />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+   </head>
+   <body class="is-preload">
+      <div id="wrapper">
+         <header id="header">
+            <a href="index.html" class="logo">Emad Ghalenoei</a>
+         </header>
+         <nav id="nav">
+            <ul class="links">
+               <li><a href="index.html#Projects">Projects</a></li>
+               <li class="active"><a href="Project4.html">Project Details</a></li>
+            </ul>
+            <ul class="icons">
+               <li><a href="https://www.linkedin.com/in/emad-ghalenoei/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+               <li><a href="https://github.com/emadghalenoei" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+         </nav>
+         <div id="main">
+            <section class="post">
+               <header class="major">
+                  <span class="date">Automation Project</span>
+                  <h1>Selenium Browser Automation</h1>
+                  <p>An educational Python project focused on browser workflow automation, dynamic page interaction, and reliable DOM targeting.</p>
+               </header>
+               <span class="image fit"><img src="images/Follow_Selenium.png" alt="Selenium automation code sample" /></span>
+               <p>Selenium is a practical framework for automating browser interactions, especially when a workflow depends on clicking through dynamic pages, handling modal windows, or extracting information from rendered content. In this project, I used Python and Selenium to experiment with repeatable browser actions and automated UI navigation.</p>
+               <p>The most interesting engineering challenge was not the clicks themselves, but managing state in dynamic interfaces. Modal windows, partial rendering, delayed loading, and scrolling behavior required careful sequencing. I used XPath-based selection, controlled wait logic, and incremental scrolling patterns to handle elements that were not all available at once.</p>
+               <p>Although this was an early exploratory project, it helped build practical skills that still matter in production settings: robust automation, error handling, interaction with asynchronous interfaces, and workflow scripting for repetitive web tasks.</p>
+               <ul class="actions special">
+                  <li><a href="index.html#Projects" class="button">Back to Projects</a></li>
+               </ul>
+            </section>
+         </div>
+         <div id="copyright">
+            <ul>
+               <li>&copy; Emad Ghalenoei</li>
+            </ul>
+         </div>
+      </div>
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/browser.min.js"></script>
+      <script src="assets/js/breakpoints.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
