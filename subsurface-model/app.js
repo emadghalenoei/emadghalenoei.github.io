@@ -13,16 +13,16 @@ const basementColor = '#e88761';
 const colors = [[0, saltColor], [0.45, '#a6ccda'], [0.5, sedimentColor], [0.55, '#edbd9d'], [1, basementColor]];
 const densityColors = [[0, saltColor], [0.1226, saltColor], [0.1227, sedimentColor], [0.6226, sedimentColor], [0.6227, basementColor], [1, basementColor]];
 const plotConfig = {responsive: true, displaylogo: false, modeBarButtonsToRemove: ['lasso2d', 'select2d', 'toImage']};
-const font = {family: 'DM Sans, sans-serif', color: '#a7bdc6', size: 11};
+const font = {family: 'Segoe UI, sans-serif', color: '#b7bfd7', size: 11};
 const base = {paper_bgcolor: 'rgba(0,0,0,0)', plot_bgcolor: 'rgba(0,0,0,0)', font, margin: {l: 48, r: 18, t: 8, b: 43}};
-const axis = (title) => ({title: {text: title, standoff: 5}, color: '#8ba7b3', gridcolor: '#28424e', zeroline: false, tickfont: {size: 10}});
+const axis = (title) => ({title: {text: title, standoff: 5}, color: '#aab3cf', gridcolor: '#343b59', zeroline: false, tickfont: {size: 10}});
 
 function fail(error) { $('error').textContent = error.message || String(error); $('error').hidden = false; console.error(error); }
 function fmtRange(values) { return `${Math.min(...values).toFixed(1)}–${Math.max(...values).toFixed(1)}`; }
 function modelScale(kind) { return kind === 'density' ? [-0.13, 0.4] : [-0.35, 0.35]; }
 function modelColors(kind) { return kind === 'density' ? densityColors : colors; }
 function modelColorbar(kind, len) {
-  return {thickness: 9, len, tickfont: {color: '#a7bdc6', size: 10}, outlinewidth: 0,
+  return {thickness: 9, len, tickfont: {color: '#b7bfd7', size: 10}, outlinewidth: 0,
     ...(kind === 'density' ? {tickvals: [-0.13, 0, 0.4], ticktext: ['Salt', 'Sediments', 'Basement']} : {})};
 }
 function updateLegend() {
@@ -107,9 +107,9 @@ async function showModel() {
   await Plotly.react('model-plot', traces, {
     ...base, margin: {l: 0, r: 0, t: 0, b: 0}, showlegend: false,
     scene: {bgcolor: 'rgba(0,0,0,0)', aspectmode: 'manual', aspectratio: {x: 1.15, y: 1, z: 0.64},
-      xaxis: {...axis('Easting / km'), range: [ranges.x[0], ranges.x.at(-1)], backgroundcolor: '#102633', showbackground: true},
-      yaxis: {...axis('Northing / km'), range: [ranges.y.at(-1), ranges.y[0]], backgroundcolor: '#102633', showbackground: true},
-      zaxis: {...axis('Depth / km'), range: [ranges.z.at(-1), ranges.z[0]], backgroundcolor: '#102633', showbackground: true},
+      xaxis: {...axis('Easting / km'), range: [ranges.x[0], ranges.x.at(-1)], backgroundcolor: '#171c32', showbackground: true},
+      yaxis: {...axis('Northing / km'), range: [ranges.y.at(-1), ranges.y[0]], backgroundcolor: '#171c32', showbackground: true},
+      zaxis: {...axis('Depth / km'), range: [ranges.z.at(-1), ranges.z[0]], backgroundcolor: '#171c32', showbackground: true},
       camera: {eye: {x: 1.45, y: -1.55, z: 0.85}}}
   }, plotConfig);
   if (!modelClickBound) {
@@ -126,7 +126,7 @@ function plotField(id, data, unit, range) {
   return Plotly.react(id, [{type: 'heatmap', x: data.x, y: data.y, z: data.values,
     colorscale: 'Viridis', zmin: range[0], zmax: range[1], zsmooth: false,
     hovertemplate: `E %{x:.2f} km<br>N %{y:.2f} km<br>Value %{z:.3f} ${unit}<extra></extra>`,
-    colorbar: {thickness: 9, len: 0.75, tickfont: {color: '#a7bdc6', size: 10}, outlinewidth: 0}}],
+    colorbar: {thickness: 9, len: 0.75, tickfont: {color: '#b7bfd7', size: 10}, outlinewidth: 0}}],
     {...base, xaxis: axis('Easting / km'), yaxis: {...axis('Northing / km'), scaleanchor: 'x', scaleratio: 1}}, plotConfig);
 }
 async function showData() {
@@ -193,7 +193,7 @@ async function showUncertainty() {
   await Plotly.react('uncertainty-plot', [{type: 'heatmap', x: data.x, y: data.y, z: data.values,
     colorscale: [[0, '#f7fafb'], [0.45, '#f3c77a'], [1, '#d45f4e']], zmin: data.range[0], zmax: data.range[1], zsmooth: false,
     hovertemplate: `${data.horizontal.toUpperCase()} %{x:.2f} km<br>${data.vertical.toUpperCase()} %{y:.2f} km<br>${data.measure}: %{z:.3f}<extra></extra>`,
-    colorbar: {thickness: 9, len: 0.75, tickfont: {color: '#a7bdc6', size: 10}, outlinewidth: 0}}],
+    colorbar: {thickness: 9, len: 0.75, tickfont: {color: '#b7bfd7', size: 10}, outlinewidth: 0}}],
     {...base, xaxis: axis(`${data.horizontal.toUpperCase()} / km`), yaxis: {...axis(`${data.vertical.toUpperCase()} / km`), ...(data.vertical === 'z' ? {autorange: 'reversed'} : {})}}, plotConfig);
   if (current === uncertaintyRequest) $('uncertainty-coordinate').textContent = label;
 }

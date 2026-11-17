@@ -14,6 +14,8 @@ This browser-only project lets visitors compare surface gravity and magnetic mea
 
 All runtime assets are in this folder. After publication, the viewer needs only a static file host such as GitHub Pages.
 
+The viewer shares the portfolio's dark technology palette through `style.css`. Its map and model colors, plot labels, and plotting axes are set in `app.js`. Keep the viewer's control IDs and relative data paths when changing its layout.
+
 ## Build and check
 
 The source folder is `D:\Python_Projects\geophysical_inversion\Projects\Gasha`. It holds read-only scientific inputs. `tools/source_data.py` in this repository reconstructs the axes and display grids from those inputs, so building no longer imports code from the other workspace. The loader preserves the existing coordinate rules and exports a public project label of **Subsurface Model**.

@@ -1,5 +1,5 @@
 # Portfolio CSS
 
-`main.css` is the stylesheet loaded by the portfolio and project pages. `noscript.css` is loaded when JavaScript is disabled. `fontawesome-all.min.css` supplies icon styles and refers to `../webfonts/`.
+`site.css` is the stylesheet loaded by the landing page and all 13 project stories. It defines the shared colors, typography, navigation, cards, story layout, contact section, and responsive behavior. The site works without JavaScript.
 
-The corresponding Sass sources are in [`../sass/`](../sass/README.md). Changing Sass alone will not change the published site; the served CSS must also be updated. The Subsurface Model viewer uses its separate `../../subsurface-model/style.css`.
+`main.css`, `noscript.css`, and `fontawesome-all.min.css` are archived files from the earlier HTML5 UP theme. The corresponding Sass sources are in [`../sass/`](../sass/README.md). The Subsurface Model viewer uses its separate `../../subsurface-model/style.css` with matching design tokens.

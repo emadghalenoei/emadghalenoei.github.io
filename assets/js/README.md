@@ -1,5 +1,5 @@
 # Portfolio JavaScript
 
-`main.js` and `util.js` provide theme behavior such as navigation and scrolling. The other `.min.js` files are bundled dependencies (jQuery, Scrolly, Scrollex, browser detection, and breakpoints). Portfolio pages load these scripts near the end of their HTML.
+These are archived scripts from the earlier HTML5 UP portfolio theme. `main.js` and `util.js` supplied navigation and scrolling behavior; the other `.min.js` files are their bundled dependencies. The current landing page and project stories do not load JavaScript.
 
 The interactive Subsurface Model viewer does not use this folder; its code is in [`../../subsurface-model/`](../../subsurface-model/README.md).

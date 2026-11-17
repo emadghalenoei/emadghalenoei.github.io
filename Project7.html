@@ -1,66 +1,114 @@
-<!DOCTYPE HTML>
-<html>
-   <head>
-      <title>Optical Flow Motion Analysis | Emad</title>
-      <link rel="shortcut icon" href="images/favicon_black.ico">
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="description" content="Optical flow project by Emad Ghaleh Noei for motion estimation in video and sequential satellite imagery." />
-      <link rel="stylesheet" href="assets/css/main.css" />
-      <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-   </head>
-   <body class="is-preload">
-      <div id="wrapper">
-         <header id="header">
-            <a href="index.html" class="logo">Emad</a>
-         </header>
-         <nav id="nav">
-            <ul class="links">
-               <li><a href="index.html#Projects">Projects</a></li>
-               <li class="active"><a href="Project7.html">Project Details</a></li>
-            </ul>
-            <ul class="icons">
-               <li><a href="http://www.linkedin.com/in/emadghalehnoei" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-               <li><a href="https://github.com/emadghalenoei" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-            </ul>
-         </nav>
-         <div id="main">
-            <section class="post">
-               <header class="major">
-                  <span class="date">Computer Vision</span>
-                  <h1>Optical Flow for Motion Analysis</h1>
-                  <p>Estimating motion from sequential images using dense optical flow in OpenCV and applying the same ideas to satellite data.</p>
-               </header>
-               <figure>
-                  <video width="100%" controls muted>
-                     <source src="images/Abed_Ismail_crop.mp4" type="video/mp4">
-                     Your browser does not support the video tag.
-                  </video>
-                  <p><em>Example video used for motion analysis.</em></p>
-               </figure>
-               <p>Optical flow estimates apparent motion between sequential frames by assigning a displacement vector to image locations. It is a foundational idea in computer vision because it converts visual change into a measurable field of direction and magnitude that can be analyzed quantitatively.</p>
-               <p>For this project, I used dense optical flow in OpenCV, based on Gunnar Farneback's method, to compute motion across entire frames rather than only at a sparse set of keypoints. I visualized the direction and magnitude of motion using HSV color encoding and vector-field outputs to make the results easier to interpret.</p>
-               <span class="image fit"><img src="images/quiver.png" alt="Optical flow vector field" /></span>
-               <p>I also applied the same concept to sequential sea-surface temperature satellite imagery. In that context, apparent temperature motion can act as a proxy for surface movement, allowing optical-flow methods to support exploratory analysis of ocean dynamics from remotely sensed data.</p>
-               <span class="image fit"><img src="images/sst_opticalflow.PNG" alt="Optical flow on sea surface temperature imagery" /></span>
-               <ul class="actions special">
-                  <li><a href="https://www.youtube.com/watch?v=AeDZgTfW0is" class="button">Watch the Video</a></li>
-                  <li><a href="index.html#Projects" class="button">Back to Projects</a></li>
-               </ul>
-            </section>
-         </div>
-         <div id="copyright">
-            <ul>
-               <li>&copy; Emad</li>
-            </ul>
-         </div>
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Optical Flow Motion Analysis | Emad</title>
+    <link href="images/favicon_black.ico" rel="shortcut icon" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="Optical flow project by Emad Ghaleh Noei for motion estimation in video and sequential satellite imagery."
+      name="description"
+    />
+    <link href="assets/css/site.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a
+          aria-label="Emad Ghaleh Noei, home"
+          class="site-brand"
+          href="index.html"
+          ><span class="brand-symbol">E<span>/</span></span
+          ><span class="brand-name"
+            >EMAD GHALEH NOEI<small
+              >GEOSPATIAL AI &amp; VISUAL COMPUTING</small
+            ></span
+          ></a
+        >
+        <nav aria-label="Main navigation" class="site-nav">
+          <a href="index.html#Projects">Work</a
+          ><a href="index.html#About">About</a
+          ><a href="index.html#Experience">Experience</a
+          ><a href="index.html#Skills">Skills</a
+          ><a class="nav-contact" href="mailto:emadghalenoei@gmail.com"
+            >Let's talk <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </header>
+
+      <div class="story-main" id="main">
+        <section class="project-story">
+          <header class="story-hero">
+            <a class="back-link" href="index.html#Projects">← All projects</a>
+            <span class="eyebrow">COMPUTER VISION</span>
+            <h1>Optical Flow for Motion Analysis</h1>
+            <p>
+              Estimating motion from sequential images using dense optical flow
+              in OpenCV and applying the same ideas to satellite data.
+            </p>
+            <div class="story-meta">
+              <span>PROJECT STORY</span><span>EMAD GHALEH NOEI</span>
+            </div>
+          </header>
+          <figure>
+            <video controls="" muted="" width="100%">
+              <source src="images/Abed_Ismail_crop.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <p><em>Example video used for motion analysis.</em></p>
+          </figure>
+          <p>
+            Optical flow estimates apparent motion between sequential frames by
+            assigning a displacement vector to image locations. It is a
+            foundational idea in computer vision because it converts visual
+            change into a measurable field of direction and magnitude that can
+            be analyzed quantitatively.
+          </p>
+          <p>
+            For this project, I used dense optical flow in OpenCV, based on
+            Gunnar Farneback's method, to compute motion across entire frames
+            rather than only at a sparse set of keypoints. I visualized the
+            direction and magnitude of motion using HSV color encoding and
+            vector-field outputs to make the results easier to interpret.
+          </p>
+          <span class="image fit"
+            ><img alt="Optical flow vector field" src="images/quiver.png"
+          /></span>
+          <p>
+            I also applied the same concept to sequential sea-surface
+            temperature satellite imagery. In that context, apparent temperature
+            motion can act as a proxy for surface movement, allowing
+            optical-flow methods to support exploratory analysis of ocean
+            dynamics from remotely sensed data.
+          </p>
+          <span class="image fit"
+            ><img
+              alt="Optical flow on sea surface temperature imagery"
+              src="images/sst_opticalflow.PNG"
+          /></span>
+          <ul class="actions story-actions">
+            <li>
+              <a
+                class="button"
+                href="https://www.youtube.com/watch?v=AeDZgTfW0is"
+                >Watch the Video</a
+              >
+            </li>
+            <li>
+              <a class="button" href="index.html#Projects">Back to Projects</a>
+            </li>
+          </ul>
+        </section>
       </div>
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/jquery.scrollex.min.js"></script>
-      <script src="assets/js/jquery.scrolly.min.js"></script>
-      <script src="assets/js/browser.min.js"></script>
-      <script src="assets/js/breakpoints.min.js"></script>
-      <script src="assets/js/util.js"></script>
-      <script src="assets/js/main.js"></script>
-   </body>
+      <footer class="site-bottom">
+        <span>© Emad Ghaleh Noei</span
+        ><span>Maps · Images · Models · People</span>
+        <div>
+          <a href="https://www.linkedin.com/in/emadghalehnoei">LinkedIn ↗</a
+          ><a href="https://github.com/emadghalenoei">GitHub ↗</a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

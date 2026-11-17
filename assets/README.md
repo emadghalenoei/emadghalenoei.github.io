@@ -4,10 +4,10 @@ These files support the root portfolio and project pages. The Subsurface Model v
 
 | Folder | Contents |
 | --- | --- |
-| [`css/`](css/README.md) | CSS loaded by the portfolio pages, including the compiled theme. |
-| [`js/`](js/README.md) | Portfolio navigation and animation scripts plus bundled libraries. |
-| [`sass/`](sass/README.md) | Sass sources for the theme; browsers do not load these directly. |
-| [`webfonts/`](webfonts/README.md) | Font Awesome icon font files used by the theme. |
+| [`css/`](css/README.md) | The active portfolio stylesheet and archived theme CSS. |
+| [`js/`](js/README.md) | Archived portfolio theme scripts; current pages do not load them. |
+| [`sass/`](sass/README.md) | Archived Sass sources; browsers do not load these directly. |
+| [`webfonts/`](webfonts/README.md) | Archived Font Awesome fonts from the earlier theme. |
 | [`docs/`](docs/README.md) | Resume PDF linked from the portfolio. |
 
-The design base is **Massively by HTML5 UP**, credited in `../index.html` and the theme source. Keep relative asset paths when editing HTML.
+The current site has a custom CSS design in `css/site.css`. The older **Massively by HTML5 UP** files remain in this folder with their source credits. Keep relative asset paths when editing HTML.

@@ -13,7 +13,7 @@ This is a static GitHub Pages site. [`index.html`](index.html) is the portfolio 
 | Find portfolio styles, scripts, and resume | [`assets/README.md`](assets/README.md) |
 | Find photos, screenshots, and video | [`images/README.md`](images/README.md) |
 
-`index_org.html`, `generic.html`, and `elements.html` are older or template pages, not the current entry point. [`AGENTS.md`](AGENTS.md) contains editing constraints.
+`index_org.html`, `generic.html`, and `elements.html` redirect older template links to the current landing page. [`AGENTS.md`](AGENTS.md) contains editing constraints.
 
 ## Project page map
 
@@ -35,10 +35,11 @@ This is a static GitHub Pages site. [`index.html`](index.html) is the portfolio 
 
 ## Site structure
 
-- `index.html` loads the portfolio theme in `assets/` and media in `images/`. Project cards link to individual stories and demos.
+- `index.html` is the landing page. It introduces Emad, highlights selected work, and links to individual project stories and demos. The 13 `Project*.html` stories share its visual system.
+- `assets/css/site.css` is the active portfolio stylesheet. The former HTML5 UP CSS, Sass, JavaScript, and icon fonts remain as reference assets but are not loaded by the current portfolio pages.
 - `subsurface-model/` contains its own HTML, CSS, JavaScript, bundled Plotly runtime, and browser-ready data. It requires no backend or Python process after publication.
 - The viewer's export tools and scientific input loader now live in `subsurface-model/tools/`. They read the separate scientific folder at `D:\Python_Projects\geophysical_inversion\Projects\Gasha`; only derived browser data is written here. The scientific inputs remain read-only.
-- Keep links and asset paths relative so the site works under a GitHub Pages subpath. No build step is needed for ordinary HTML edits. Browsers use compiled CSS in `assets/css/`, not the Sass source.
+- Keep links and asset paths relative so the site works under a GitHub Pages subpath. No build step is needed for ordinary HTML edits. The viewer's matching interface styles live in `subsurface-model/style.css`; its plot colors and axes live in `subsurface-model/app.js`.
 
 ## Preview and verify
 

@@ -1,60 +1,120 @@
-<!DOCTYPE HTML>
-<html>
-   <head>
-      <title>3D Bayesian Inversion | Emad</title>
-      <link rel="shortcut icon" href="images/favicon_black.ico">
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="description" content="3D Bayesian inversion project by Emad Ghaleh Noei for subsurface interpretation from gravity and magnetic data." />
-      <link rel="stylesheet" href="assets/css/main.css" />
-      <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-   </head>
-   <body class="is-preload">
-      <div id="wrapper">
-         <header id="header">
-            <a href="index.html" class="logo">Emad</a>
-         </header>
-         <nav id="nav">
-            <ul class="links">
-               <li><a href="index.html#Projects">Projects</a></li>
-               <li class="active"><a href="Project5.html">Project Details</a></li>
-            </ul>
-            <ul class="icons">
-               <li><a href="http://www.linkedin.com/in/emadghalehnoei" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-               <li><a href="https://github.com/emadghalenoei" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-            </ul>
-         </nav>
-         <div id="main">
-            <section class="post">
-               <header class="major">
-                  <span class="date">Published Research</span>
-                  <h1>3D Bayesian Inversion for Subsurface Modeling</h1>
-                  <p>Probabilistic earth modeling with adaptive parameterization, correlated-noise estimation, and uncertainty-aware interpretation.</p>
-               </header>
-               <span class="image fit"><img src="images/Model_3D.png" alt="3D Bayesian inversion model" /></span>
-               <p>This project addresses a central challenge in geophysical inversion: how to recover meaningful 3D subsurface structure from limited and noisy gravity and magnetic observations. Traditional regularized inversions often smooth away the very structures that matter most for interpretation. I developed a nonlinear Bayesian framework that lets model complexity adapt locally to the information content of the data.</p>
-               <p>The method combines trans-dimensional partitioning with hierarchical model components and correlated-noise estimation. Instead of relying on a single fixed discretization, the inversion updates its parameterization as sampling progresses. That helps reduce unnecessary model complexity while preserving sharp, geologically meaningful structure where the data support it.</p>
-               <p>The workflow was designed for large-scale 3D problems, so computational efficiency was equally important. Wavelet compression, adaptive parameterization, and parsimonious modeling made it practical to sample posterior model ensembles and quantify uncertainty rather than produce only a single deterministic result.</p>
-               <p>This work was published in <em>Geophysical Journal International</em> and remains one of the core research threads behind my later work on adaptive geometry, uncertainty estimation, and spatial ML.</p>
-               <span class="image fit"><img src="images/GJI_3D.png" alt="Geophysical Journal International figure" /></span>
-               <ul class="actions special">
-                  <li><a href="https://academic.oup.com/gji/advance-article-abstract/doi/10.1093/gji/ggac083/6536917" class="button">Read the Paper</a></li>
-                  <li><a href="https://github.com/emadghalenoei/3D_Voronoi_Plane_Trans-D_Inversion" class="button">GitHub Repository</a></li>
-               </ul>
-            </section>
-         </div>
-         <div id="copyright">
-            <ul>
-               <li>&copy; Emad</li>
-            </ul>
-         </div>
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>3D Bayesian Inversion | Emad</title>
+    <link href="images/favicon_black.ico" rel="shortcut icon" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      content="3D Bayesian inversion project by Emad Ghaleh Noei for subsurface interpretation from gravity and magnetic data."
+      name="description"
+    />
+    <link href="assets/css/site.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a
+          aria-label="Emad Ghaleh Noei, home"
+          class="site-brand"
+          href="index.html"
+          ><span class="brand-symbol">E<span>/</span></span
+          ><span class="brand-name"
+            >EMAD GHALEH NOEI<small
+              >GEOSPATIAL AI &amp; VISUAL COMPUTING</small
+            ></span
+          ></a
+        >
+        <nav aria-label="Main navigation" class="site-nav">
+          <a href="index.html#Projects">Work</a
+          ><a href="index.html#About">About</a
+          ><a href="index.html#Experience">Experience</a
+          ><a href="index.html#Skills">Skills</a
+          ><a class="nav-contact" href="mailto:emadghalenoei@gmail.com"
+            >Let's talk <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </header>
+
+      <div class="story-main" id="main">
+        <section class="project-story">
+          <header class="story-hero">
+            <a class="back-link" href="index.html#Projects">← All projects</a>
+            <span class="eyebrow">PUBLISHED RESEARCH</span>
+            <h1>3D Bayesian Inversion for Subsurface Modeling</h1>
+            <p>
+              Probabilistic earth modeling with adaptive parameterization,
+              correlated-noise estimation, and uncertainty-aware interpretation.
+            </p>
+            <div class="story-meta">
+              <span>PROJECT STORY</span><span>EMAD GHALEH NOEI</span>
+            </div>
+          </header>
+          <span class="image fit"
+            ><img alt="3D Bayesian inversion model" src="images/Model_3D.png"
+          /></span>
+          <p>
+            This project addresses a central challenge in geophysical inversion:
+            how to recover meaningful 3D subsurface structure from limited and
+            noisy gravity and magnetic observations. Traditional regularized
+            inversions often smooth away the very structures that matter most
+            for interpretation. I developed a nonlinear Bayesian framework that
+            lets model complexity adapt locally to the information content of
+            the data.
+          </p>
+          <p>
+            The method combines trans-dimensional partitioning with hierarchical
+            model components and correlated-noise estimation. Instead of relying
+            on a single fixed discretization, the inversion updates its
+            parameterization as sampling progresses. That helps reduce
+            unnecessary model complexity while preserving sharp, geologically
+            meaningful structure where the data support it.
+          </p>
+          <p>
+            The workflow was designed for large-scale 3D problems, so
+            computational efficiency was equally important. Wavelet compression,
+            adaptive parameterization, and parsimonious modeling made it
+            practical to sample posterior model ensembles and quantify
+            uncertainty rather than produce only a single deterministic result.
+          </p>
+          <p>
+            This work was published in
+            <em>Geophysical Journal International</em> and remains one of the
+            core research threads behind my later work on adaptive geometry,
+            uncertainty estimation, and spatial ML.
+          </p>
+          <span class="image fit"
+            ><img
+              alt="Geophysical Journal International figure"
+              src="images/GJI_3D.png"
+          /></span>
+          <ul class="actions story-actions">
+            <li>
+              <a
+                class="button"
+                href="https://academic.oup.com/gji/advance-article-abstract/doi/10.1093/gji/ggac083/6536917"
+                >Read the Paper</a
+              >
+            </li>
+            <li>
+              <a
+                class="button"
+                href="https://github.com/emadghalenoei/3D_Voronoi_Plane_Trans-D_Inversion"
+                >GitHub Repository</a
+              >
+            </li>
+          </ul>
+        </section>
       </div>
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/jquery.scrollex.min.js"></script>
-      <script src="assets/js/jquery.scrolly.min.js"></script>
-      <script src="assets/js/browser.min.js"></script>
-      <script src="assets/js/breakpoints.min.js"></script>
-      <script src="assets/js/util.js"></script>
-      <script src="assets/js/main.js"></script>
-   </body>
+      <footer class="site-bottom">
+        <span>© Emad Ghaleh Noei</span
+        ><span>Maps · Images · Models · People</span>
+        <div>
+          <a href="https://www.linkedin.com/in/emadghalehnoei">LinkedIn ↗</a
+          ><a href="https://github.com/emadghalenoei">GitHub ↗</a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
