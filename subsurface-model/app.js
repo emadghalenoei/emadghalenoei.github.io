@@ -206,7 +206,6 @@ function debounce(fn, delay) { let timer; return () => {clearTimeout(timer); tim
 
 async function start() {
   project = await dataStore.project();
-  $('project-name').textContent = project.project.toUpperCase();
   $('grid-shape').textContent = project.shape_zyx.join(' × ');
   for (const [key, id] of [['x', 'x-range'], ['y', 'y-range'], ['z', 'z-range']]) $(id).textContent = fmtRange(project.axes[key]);
   $('slice-position').max = project.axes.z.length - 1;

@@ -1,4 +1,4 @@
-"""Render a portfolio preview from the exported, read-only Gasha data."""
+"""Render a portfolio preview from exported, read-only subsurface data."""
 
 import json
 from pathlib import Path
@@ -42,7 +42,7 @@ def main():
 
     image = Image.new("RGB", (1200, 600), BACKGROUND)
     draw = ImageDraw.Draw(image)
-    draw.text((48, 30), "GASHA  /  GEOPHYSICAL VIEWER", fill="#64d1ca", font=font(34, True))
+    draw.text((48, 30), "SUBSURFACE MODEL", fill="#64d1ca", font=font(34, True))
     draw.text((48, 82), "Observed fields and subsurface models in one interactive view", fill=MUTED, font=font(18))
     panels = [(48, 140, 576, 552), (624, 140, 1152, 552)]
     for box in panels:
@@ -72,7 +72,7 @@ def main():
     draw.text((810, 517), "Easting / km", fill=MUTED, font=font(15))
     draw.text((536, 365), "mGal", fill=MUTED, font=font(14))
 
-    output = SITE / "images" / "gasha-viewer-preview.png"
+    output = SITE / "images" / "subsurface-model-preview.png"
     image.save(output, optimize=True)
     print(output)
 

@@ -4,7 +4,7 @@
       <title>TensorFlow Segmentation Pipelines | Emad</title>
       <link rel="shortcut icon" href="images/favicon_black.ico">
       <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" content="TensorFlow and Keras image segmentation workflows by Emad Ghaleh Noei for utility and infrastructure imagery." />
       <link rel="stylesheet" href="assets/css/main.css" />
       <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -12,11 +12,11 @@
    <body class="is-preload">
       <div id="wrapper">
          <header id="header">
-            <a href="portfolio.html" class="logo">Emad</a>
+            <a href="index.html" class="logo">Emad</a>
          </header>
          <nav id="nav">
             <ul class="links">
-               <li><a href="portfolio.html#Projects">Projects</a></li>
+               <li><a href="index.html#Projects">Projects</a></li>
                <li class="active"><a href="Project10_TensorFlow_Segmentation.html">Project Details</a></li>
             </ul>
             <ul class="icons">
@@ -29,15 +29,16 @@
                <header class="major">
                   <span class="date">Production ML</span>
                   <h1>TensorFlow Segmentation Pipelines</h1>
-                  <p>Production image-segmentation workflows for utility and infrastructure imagery using TensorFlow and Keras.</p>
+                  <p>Finding poles, wires, and other infrastructure in large collections of images.</p>
                </header>
                <span class="image fit"><img src="images/Detectron2_2.png" alt="Segmentation example" /></span>
-               <p>A major part of my recent applied ML work has involved semantic segmentation pipelines built with TensorFlow and Keras. These models were used on utility and road imagery to segment assets such as poles, wires, and related infrastructure, with the goal of supporting scalable production workflows rather than isolated experiments.</p>
+               <p>Marking infrastructure by hand across thousands of images takes time. I have built workflows that use image segmentation to outline assets such as poles and wires, helping teams process utility and road imagery at scale.</p>
+               <h2>How it works</h2>
                <p>Based on the framework inventory from my current work, the TensorFlow stack includes Keras Functional API models with pretrained backbones such as EfficientNetV2, DenseNet, and MobileNetV2. The production design uses encoder-decoder architectures with custom upsampling stages, while loss functions span Dice loss, IoU-based loss, Tversky variants, binary cross-entropy combinations, and sparse categorical cross-entropy for multi-class settings.</p>
                <p>What matters most in these systems is not only model architecture, but repeatable workflow design. I have worked on training pipelines, data preparation, tiling, normalization, metric-based evaluation, and packaging models for operational use. The result is a segmentation workflow that can be maintained, benchmarked, and integrated into larger geospatial and engineering pipelines.</p>
                <p>This page summarizes the technical direction at a public-safe level. Some implementation details are proprietary, but the architectures, tooling, and workflow design accurately represent the kinds of production ML systems I build.</p>
                <ul class="actions special">
-                  <li><a href="portfolio.html#Projects" class="button">Back to Projects</a></li>
+                  <li><a href="index.html#Projects" class="button">Back to Projects</a></li>
                </ul>
             </section>
          </div>

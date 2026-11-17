@@ -1,11 +1,11 @@
-"""Build browser-ready Gasha data without changing the scientific inputs."""
+"""Build browser-ready subsurface display data without changing scientific inputs."""
 
 import argparse
 import json
-import sys
 from pathlib import Path
 
 import numpy as np
+from source_data import ProjectData
 
 
 def write_json(path, value):
@@ -21,16 +21,13 @@ def write_volume(path, values):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, required=True,
-                        help="path to the geophysical_inversion repository")
+                        help="path to the read-only scientific project folder")
     args = parser.parse_args()
 
     source = args.source.resolve()
-    if not (source / "viewer" / "data.py").is_file():
-        parser.error(f"No viewer/data.py found under {source}")
-    sys.path.insert(0, str(source))
-    from viewer.data import ProjectData  # import the existing, documented axis rules
-
-    project = ProjectData("Gasha")
+    if not (source / "input_config.yaml").is_file():
+        parser.error(f"No input_config.yaml found under {source}")
+    project = ProjectData(source)
     output = Path(__file__).resolve().parents[1] / "data"
     output.mkdir(exist_ok=True)
 

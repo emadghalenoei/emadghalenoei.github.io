@@ -1,15 +1,353 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Interactive Gasha geophysical viewer: 3D models, gravity and magnetic fields, slices, and uncertainty.">
-  <meta http-equiv="refresh" content="0; url=./gasha-viewer/">
-  <title>Gasha Geophysical Viewer | Emad Ghaleh Noei</title>
-  <link rel="canonical" href="https://emadghalenoei.github.io/gasha-viewer/">
-</head>
-<body>
-  <p>Opening the <a href="./gasha-viewer/">interactive Gasha viewer</a>…</p>
-  <p><a href="./portfolio.html">View Emad’s portfolio</a></p>
-</body>
+   <head>
+      <title>Emad Ghaleh Noei | Maps, Images, and AI</title>
+      <link rel="shortcut icon" href="images/favicon_black.ico">
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" content="See how Emad Ghaleh Noei turns complex maps, images, and 3D data into useful tools and visual stories." />
+      <link rel="canonical" href="https://emadghalenoei.github.io/" />
+      <link rel="stylesheet" href="assets/css/main.css" />
+      <noscript>
+         <link rel="stylesheet" href="assets/css/noscript.css" />
+      </noscript>
+   </head>
+   <body class="is-preload">
+      <div id="wrapper" class="fade-in">
+         <div id="intro">
+            <div class="intro-panel">
+               <h1>Emad Ghaleh Noei</h1>
+               <p>I turn complex maps and images into tools people can use.</p>
+               <p>Explore 3D flyover videos, ways to find infrastructure in imagery, and an interactive view of the ground beneath our feet.</p>
+               <ul class="actions">
+                  <li><a href="#Projects" class="button large scrolly">Explore My Work</a></li>
+               </ul>
+            </div>
+         </div>
+         <header id="header">
+            <a href="index.html" class="logo">Emad</a>
+         </header>
+         <nav id="nav">
+            <ul class="links">
+               <li class="active"><a href="#Projects">Projects</a></li>
+               <li class="active"><a href="#Experience">Experience</a></li>
+               <li class="active"><a href="#Skills">Skills</a></li>
+               <li class="active"><a href="#Education">Education</a></li>
+               <li class="active"><a href="#Awards">Awards</a></li>
+               <li class="active"><a href="#Tutorials">Tutorials</a></li>
+            </ul>
+            <ul class="icons">
+               <li><a href="http://www.linkedin.com/in/emadghalehnoei" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+               <li><a href="https://github.com/emadghalenoei" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+               <li><a href="https://www.youtube.com/channel/UCZQcTcapIBohp-FP0U1Jgzg" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+               <li><a href="https://scholar.google.ca/citations?user=kdnPPukAAAAJ&hl=en" class="icon brands fa-google"><span class="label">Google Scholar</span></a></li>
+            </ul>
+         </nav>
+         <div id="main">
+            <article class="post featured">
+               <header class="major">
+                  <span class="date">About</span>
+                  <h2>Making complex places easier to understand</h2>
+                  <p style="text-align:left;">I am a machine learning scientist with a Ph.D. in Geomatics Engineering from the University of Calgary. I work with maps, photos, and 3D surveys to make hard-to-see patterns easier to explore and use.</p>
+                  <p style="text-align:left;">My projects include turning a route into a 3D flyover video, finding infrastructure in large image collections, and presenting possible underground structures in an interactive model.</p>
+                  <p style="text-align:left;">Behind these experiences are careful data processing, computer vision, and uncertainty-aware modeling. The project stories below show what each tool is for and how it works.</p>
+               </header>
+               <span class="image main portrait-hero"><img src="images/emad-portrait.jpg" alt="Portrait of Emad Ghaleh Noei" /></span>
+               <ul class="actions special">
+                  <li><a href="assets/docs/Emad_Resume_v15.pdf" class="button large">Download Resume</a></li>
+                  <li><a href="mailto:emadghalenoei@gmail.com" class="button large">Get in Touch</a></li>
+               </ul>
+            </article>
+            <section class="post project-intro" id="Projects">
+               <header class="major">
+                  <span class="date">Selected Work</span>
+                  <h2>Explore the projects</h2>
+                  <p>From a route you can fly over to models of places you cannot see directly, these projects turn complex data into something people can explore.</p>
+               </header>
+            </section>
+            <section class="posts" aria-label="Selected projects">
+               <article>
+                  <header>
+                     <h2><a href="Project9_FlyoverMap3D.html">Turn a route into a 3D journey</a></h2>
+                  </header>
+                  <a href="Project9_FlyoverMap3D.html" class="image fit"><img src="images/bg2.jpg" alt="Abstract blue light artwork" /></a>
+                  <p>Choose a route and see it become a 3D flyover video, built from terrain and imagery through an automated cloud workflow.</p>
+                  <ul class="actions special">
+                     <li><a href="Project9_FlyoverMap3D.html" class="button">Full Story</a></li>
+                     <li><a href="https://flyovermap3d.com" class="button">Visit the App</a></li>
+                  </ul>
+               </article>
+               <article>
+                  <header>
+                     <h2><a href="Project10_TensorFlow_Segmentation.html">Finding infrastructure in images</a></h2>
+                  </header>
+                  <a href="Project10_TensorFlow_Segmentation.html" class="image fit"><img src="images/Detectron2_2.png" alt="Semantic segmentation example" /></a>
+                  <p>Models outline poles, wires, and other assets in large image collections so people can review infrastructure more efficiently.</p>
+                  <ul class="actions special">
+                     <li><a href="Project10_TensorFlow_Segmentation.html" class="button">Full Story</a></li>
+                  </ul>
+               </article>
+               <article>
+                  <header>
+                     <h2><a href="Project12_Geospatial_ML_Pipelines.html">From raw maps to useful results</a></h2>
+                  </header>
+                  <a href="Project12_Geospatial_ML_Pipelines.html" class="image fit"><img src="images/bg1.jpg" alt="Abstract light installation artwork" /></a>
+                  <p>Reliable workflows prepare large map and 3D survey datasets, run models, and deliver results that teams can use.</p>
+                  <ul class="actions special">
+                     <li><a href="Project12_Geospatial_ML_Pipelines.html" class="button">Full Story</a></li>
+                  </ul>
+               </article>
+               <article>
+                  <header>
+                     <h2><a href="Project13_SubsurfaceModel.html">Subsurface Model</a></h2>
+                  </header>
+                  <a href="subsurface-model/" class="image fit"><img src="images/subsurface-model-preview.png" alt="Gravity map and subsurface model slice" /></a>
+                  <p>Compare surface measurements with interactive 3D interpretations of the ground below, and see where the models are less certain.</p>
+                  <ul class="actions special">
+                     <li><a href="subsurface-model/" class="button">Open Viewer</a></li>
+                     <li><a href="Project13_SubsurfaceModel.html" class="button">Project Details</a></li>
+                  </ul>
+               </article>
+            </section>
+            <section class="post project-intro">
+               <header class="major">
+                  <span class="date">More Work</span>
+                  <h2>Research and experiments</h2>
+                  <p>More ways I have used images, maps, geometry, and automation to understand the world.</p>
+               </header>
+            </section>
+            <section class="posts" aria-label="More projects">
+               <article>
+                  <header>
+                     <h2><a href="Project11_PointCloud_DeepLearning.html">3D Point-Cloud Deep Learning</a></h2>
+                  </header>
+                  <a href="Project11_PointCloud_DeepLearning.html" class="image fit"><img src="images/ML3D.png" alt="3D point-cloud learning" /></a>
+                  <p>Comparing ways to classify the millions of 3D points collected by LiDAR surveys, including deep learning and simpler baselines.</p>
+                  <ul class="actions special">
+                     <li><a href="Project11_PointCloud_DeepLearning.html" class="button">Full Story</a></li>
+                  </ul>
+               </article>
+               <article>
+                  <header>
+                     <h2><a href="Project1.html">Hierarchical Voronoi Classification</a></h2>
+                  </header>
+                  <a href="Project1.html" class="image fit"><img src="images/levente-gyulai-CfdmtUOrxgY-unsplash.jpg" alt="Abstract spatial partitioning" /></a>
+                  <p>Dividing a complex space into meaningful regions at several scales, from broad zones to local details.</p>
+                  <ul class="actions special">
+                     <li><a href="Project1.html" class="button">Full Story</a></li>
+                  </ul>
+               </article>
+               <article>
+                  <header>
+                     <h2><a href="Project2.html">Trans-dimensional Voronoi Modeling</a></h2>
+                  </header>
+                  <a href="Project2.html" class="image fit"><img src="images/edge2edge-media-x21KgBfOd_4-unsplash.jpg" alt="Voronoi modeling concept" /></a>
+                  <p>Letting a model change its own complexity as it searches for shapes and patterns hidden in data.</p>
+                  <ul class="actions special">
+                     <li><a href="Project2.html" class="button">Full Story</a></li>
+                  </ul>
+               </article>
+               <article>
+                  <header>
+                     <h2><a href="Project3.html">Alpha Shape Boundary Modeling</a></h2>
+                  </header>
+                  <a href="Project3.html" class="image fit"><img src="images/michael-dziedzic-VlZYu3nZIRI-unsplash.jpg" alt="Boundary extraction concept" /></a>
+                  <p>Finding the outline of an irregular shape from scattered points when a simple boundary would miss important detail.</p>
+                  <ul class="actions special">
+                     <li><a href="Project3.html" class="button">Full Story</a></li>
+                  </ul>
+               </article>
+               <article>
+                  <header>
+                     <h2><a href="Project5.html">3D Bayesian Inversion</a></h2>
+                  </header>
+                  <a href="Project5.html" class="image fit"><img src="images/ML3D.png" alt="3D subsurface modeling" /></a>
+                  <p>Using gravity and magnetic signals to estimate underground structure while showing how uncertain those estimates are.</p>
+                  <ul class="actions special">
+                     <li><a href="Project5.html" class="button">Full Story</a></li>
+                  </ul>
+               </article>
+               <article>
+                  <header>
+                     <h2><a href="Project6.html">Image Segmentation and Detection</a></h2>
+                  </header>
+                  <a href="Project6.html" class="image fit"><img src="images/detctron2_1.png" alt="Instance segmentation example" /></a>
+                  <p>Finding and outlining individual objects in infrastructure images, such as assets that would be slow to mark by hand.</p>
+                  <ul class="actions special">
+                     <li><a href="Project6.html" class="button">Full Story</a></li>
+                  </ul>
+               </article>
+               <article>
+                  <header>
+                     <h2><a href="Project7.html">Optical Flow Motion Analysis</a></h2>
+                  </header>
+                  <a href="Project7.html" class="image fit"><img src="images/quiver.png" alt="Optical flow vectors" /></a>
+                  <p>Following movement between images, from video frames to changing patterns in satellite views of the sea.</p>
+                  <ul class="actions special">
+                     <li><a href="Project7.html" class="button">Full Story</a></li>
+                  </ul>
+               </article>
+               <article>
+                  <header>
+                     <h2><a href="Project8_RF.html">Random Forest for LiDAR Classification</a></h2>
+                  </header>
+                  <a href="Project8_RF.html" class="image fit"><img src="images/rf.png" alt="Random forest point-cloud classification" /></a>
+                  <p>Sorting large 3D survey datasets into useful categories using geometric clues and an efficient machine learning workflow.</p>
+                  <ul class="actions special">
+                     <li><a href="Project8_RF.html" class="button">Full Story</a></li>
+                  </ul>
+               </article>
+               <article>
+                  <header>
+                     <h2><a href="Project4.html">Browser Automation with Selenium</a></h2>
+                  </header>
+                  <a href="Project4.html" class="image fit"><img src="images/instagram.jpg" alt="Browser automation concept" /></a>
+                  <p>Automating repeated browser tasks and dealing with dynamic pages, pop-ups, and changing content.</p>
+                  <ul class="actions special">
+                     <li><a href="Project4.html" class="button">Full Story</a></li>
+                  </ul>
+               </article>
+            </section>
+            <section class="post" id="Experience">
+               <header class="major">
+                  <span class="date">Experience</span>
+                  <h2>Selected Roles</h2>
+               </header>
+               <h3>Lead Geospatial AI Engineer | Spatial Data Analytics Inc. | Jul 2026 - Present</h3>
+               <p>I lead geospatial AI, computer vision, and GIS solution development across LiDAR, imagery, 3D vector data, automation, and cloud-based processing workflows. My work also includes coordinating engineering and R&amp;D delivery plans, defining AI automation workflows, and establishing technical documentation and data-processing standards.</p>
+               <h3>Innovation Developer | Spatial Data Analytics Inc. | May 2022 - Jun 2026</h3>
+               <p>I built production ML pipelines for image segmentation, object detection, and LiDAR / point-cloud workflows on large geospatial datasets. This included agentic model-evaluation and PDF reporting workflows, GeoPandas and Shapely-based benchmarking systems, and scalable PDAL and laspy pipelines for LAS/LAZ processing.</p>
+               <h3>Applied Research Scientist | University of Calgary | Feb 2022 - Jan 2023</h3>
+               <p>I focused on applied geospatial and geophysical modeling, combining machine learning, Bayesian inference, and deterministic methods for subsurface interpretation. I also led Python-based analysis and uncertainty-aware workflows supporting geothermal target discovery.</p>
+               <h3>Lead Innovation Developer | Flyover Map 3D | Sep 2020 - Feb 2022</h3>
+               <p>I worked on a geospatial platform that generated 3D interactive maps and flyover visualizations from user-defined routes. The platform used Cloud Run, Google Cloud Storage, Firestore, FastAPI, and Docker for orchestration, delivery, monitoring, and large-scale DEM and RGB preprocessing.</p>
+               <h3>Geospatial Developer | University of Calgary | Sep 2017 - Dec 2021</h3>
+               <p>I developed Bayesian and machine-learning workflows for inverse problems, anomaly detection, uncertainty estimation, and spatial-data analysis. I also built geospatial and geophysical Python pipelines for subsurface modeling and delivered 3D earth models for external clients, including ADNOC.</p>
+            </section>
+            <section class="post" id="Skills">
+               <header class="major">
+                  <span class="date">Skills</span>
+                  <h2>Core Capabilities</h2>
+               </header>
+               <div class="row">
+                  <div class="col-4 col-12-small">
+                     <h3>Programming and Tools</h3>
+                     <ul>
+                        <li>Python, C++, Cython, Julia, R, JavaScript</li>
+                        <li>FastAPI, Docker, Google Cloud, AWS, CUDA</li>
+                        <li>Git, Jupyter, LaTeX, parallel computing, MPI</li>
+                     </ul>
+                  </div>
+                  <div class="col-4 col-12-small">
+                     <h3>ML and Computer Vision</h3>
+                     <ul>
+                        <li>PyTorch, TensorFlow, Keras, Scikit-learn, Detectron2, SAM</li>
+                        <li>EfficientNetV2, DenseNet, MobileNetV2, Mask R-CNN, PointRend, Panoptic-DeepLab</li>
+                        <li>Semantic segmentation, object detection, anomaly detection, experiment design, benchmarking</li>
+                     </ul>
+                  </div>
+                  <div class="col-4 col-12-small">
+                     <h3>Geospatial and 3D Data</h3>
+                     <ul>
+                        <li>LiDAR point clouds, PointCONV workflows, feature engineering</li>
+                        <li>PDAL, GDAL/OGR, GeoPandas, Rasterio, PostGIS, Earth Engine</li>
+                        <li>Geospatial preprocessing, reprojection, mesh generation, scalable inference</li>
+                     </ul>
+                  </div>
+               </div>
+               <p>The production frameworks I work with span TensorFlow/Keras segmentation pipelines, Detectron2-based instance segmentation and detection, and 3D point-cloud classification workflows ranging from feature-engineered random forests to PointNet++ and PointCONV benchmarking.</p>
+            </section>
+            <section class="post" id="Education">
+               <header class="major">
+                  <span class="date">Education</span>
+                  <h2>Academic Background</h2>
+               </header>
+               <ul>
+                  <li><strong>University of Calgary</strong> | Ph.D. in Geomatics Engineering | 2017 - 2021 | GPA: 3.9/4.0</li>
+                  <li><strong>University of Tehran</strong> | M.S. in Geospatial Engineering | 2012 - 2014 | GPA: 3.85/4.0</li>
+               </ul>
+            </section>
+            <section class="post" id="Awards">
+               <header class="major">
+                  <span class="date">Awards</span>
+                  <h2>Scholarships and Recognition</h2>
+               </header>
+               <ul>
+                  <li>Alberta Graduate Excellence Scholarship, 2021</li>
+                  <li>Alberta Graduate Excellence Scholarship, 2019</li>
+                  <li>Helmut Moritz Graduate Scholarship, 2019</li>
+                  <li>External Awards: Miscellaneous, 2019</li>
+                  <li>3rd Place at the Geomathon Competition, 2019</li>
+                  <li>Teaching Award, 2018</li>
+               </ul>
+               <span class="image fit"><img src="images/sideris.jpg" alt="Awards ceremony" /></span>
+                <p>These awards reflect academic performance, research contribution, and teaching excellence during my graduate studies in Geomatics Engineering.</p>
+            </section>
+            <section class="posts" id="Tutorials">
+               <article>
+                  <header>
+                     <h2>k-means Clustering</h2>
+                  </header>
+                  <iframe width="400" height="315" src="https://www.youtube.com/embed/hpnmZqOW2dU" title="k-means clustering tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </article>
+               <article>
+                  <header>
+                     <h2>Scikit-learn Basics</h2>
+                  </header>
+                  <iframe width="400" height="315" src="https://www.youtube.com/embed/aM8L5pexqUU" title="Scikit-learn basics tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </article>
+               <article>
+                  <header>
+                     <h2>DataFrame Visualization</h2>
+                  </header>
+                  <iframe width="400" height="315" src="https://www.youtube.com/embed/bInWGae9mz4" title="DataFrame visualization tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </article>
+               <article>
+                  <header>
+                     <h2>Motion Detection with Optical Flow</h2>
+                  </header>
+                  <iframe width="400" height="315" src="https://www.youtube.com/embed/UrXPiXTM4do" title="Motion detection tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </article>
+            </section>
+         </div>
+         <footer id="footer">
+            <section class="split contact">
+               <section class="alt">
+                  <h3>Location</h3>
+                  <p>Canada</p>
+               </section>
+               <section>
+                  <h3>Email</h3>
+                  <p><a href="mailto:emadghalenoei@gmail.com">emadghalenoei@gmail.com</a></p>
+               </section>
+               <section>
+                  <h3>Links</h3>
+                  <p><a href="assets/docs/Emad_Resume_v15.pdf">Resume</a><br /><a href="https://flyovermap3d.com">Flyover Map 3D</a></p>
+               </section>
+               <section>
+                  <h3>Social</h3>
+                  <ul class="icons alt">
+                     <li><a href="http://www.linkedin.com/in/emadghalehnoei" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                     <li><a href="https://github.com/emadghalenoei" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                     <li><a href="https://www.youtube.com/channel/UCZQcTcapIBohp-FP0U1Jgzg" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+                     <li><a href="https://scholar.google.ca/citations?user=kdnPPukAAAAJ&hl=en" class="icon brands fa-google"><span class="label">Google Scholar</span></a></li>
+                  </ul>
+               </section>
+            </section>
+         </footer>
+         <div id="copyright">
+            <ul>
+               <li>&copy; Emad</li>
+               <li>Design base: <a href="https://html5up.net">HTML5 UP</a></li>
+            </ul>
+         </div>
+      </div>
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/browser.min.js"></script>
+      <script src="assets/js/breakpoints.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
